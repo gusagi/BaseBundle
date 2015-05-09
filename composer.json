@@ -1,0 +1,23 @@
+{
+  "name": "wizin/base-bundle",
+  "description": "Base bundle for Wizin packages",
+  "keywords": [],
+  "type": "symfony-bundle",
+  "version": "0.0.1",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Makoto Hashiguchi",
+      "email": "gusagi@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "symfony/framework-bundle": "~2.3"
+  },
+  "autoload": {
+    "psr-0": { "Wizin\\Bundle\\BaseBundle": "" }
+  },
+  "target-dir": "Wizin/Bundle/BaseBundle",
+  "minimum-stability": "dev"
+}
