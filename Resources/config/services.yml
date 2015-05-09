@@ -1,0 +1,7 @@
+parameters:
+#    wizin_base.example.class: Wizin\Bundle\BaseBundle\Example
+
+services:
+#    wizin_base.example:
+#        class: %wizin_base.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
