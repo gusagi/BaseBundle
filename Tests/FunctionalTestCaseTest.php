@@ -2,6 +2,8 @@
 
 namespace Wizin\Bundle\BaseBundle\Tests;
 
+use Wizin\Bundle\BaseBundle\TestCases\FunctionalTestCase;
+
 class FunctionalTestCaseTest extends FunctionalTestCase
 {
     /**

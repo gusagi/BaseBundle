@@ -2,8 +2,13 @@
 /**
  * Trait for TestCase
  */
-namespace Wizin\Bundle\BaseBundle\Tests;
+namespace Wizin\Bundle\BaseBundle\TestCases;
 
+/**
+ * Trait for tests.
+ *
+ * @author Makoto Hashiguchi <gusagi@gmail.com>
+ */
 trait TestCaseTrait
 {
     /**

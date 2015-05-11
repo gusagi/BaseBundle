@@ -1,6 +1,6 @@
 <?php
 
-namespace Wizin\Bundle\BaseBundle\Tests;
+namespace Wizin\Bundle\BaseBundle\TestCases;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
@@ -12,7 +12,7 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 abstract class FunctionalTestCase extends WebTestCase
 {
     /**
-     * \Wizin\Bundle\BaseBundle\Tests\TestCaseTrait
+     * \Wizin\Bundle\BaseBundle\TestCases\TestCaseTrait
      */
     use TestCaseTrait;
 
