@@ -11,4 +11,22 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
  */
 abstract class FunctionalTestCase extends WebTestCase
 {
+    /**
+     * \Wizin\Bundle\BaseBundle\Tests\TestCaseTrait
+     */
+    use TestCaseTrait;
+
+    /**
+     * @var \Symfony\Bundle\FrameworkBundle\Client
+     */
+    protected static $client;
+
+    /**
+     * @return null
+     */
+    public function setUp()
+    {
+        static::$client = $this->createClient();
+        $this->setUpContainer();
+    }
 }
