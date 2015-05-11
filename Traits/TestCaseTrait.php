@@ -2,7 +2,7 @@
 /**
  * Trait for TestCase
  */
-namespace Wizin\Bundle\BaseBundle\TestCases;
+namespace Wizin\Bundle\BaseBundle\Traits;
 
 /**
  * Trait for tests.
