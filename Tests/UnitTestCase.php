@@ -15,17 +15,20 @@ use Symfony\Component\HttpKernel\KernelInterface;
  */
 abstract class UnitTestCase extends TestCase
 {
+    /**
+     * \Wizin\Bundle\BaseBundle\Tests\TestCaseTrait
+     */
+    use TestCaseTrait;
+
+    /**
+     * @var
+     */
     protected static $class;
 
     /**
      * @var KernelInterface
      */
     protected static $kernel;
-
-    /**
-     * @var \Symfony\Component\DependencyInjection\ContainerAwareInterface
-     */
-    protected static $container;
 
     /**
      * @return null
@@ -38,9 +41,9 @@ abstract class UnitTestCase extends TestCase
 
         static::$kernel = static::createKernel();
         static::$kernel->boot();
-        static::$container = static::$kernel->getContainer();
 
         parent::setUp();
+        $this->setUpContainer();
     }
 
     /**
