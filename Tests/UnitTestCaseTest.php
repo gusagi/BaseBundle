@@ -17,7 +17,6 @@ class UnitTestCaseTest extends UnitTestCase
      */
     public function isContainerLoaded()
     {
-        var_export(get_class(static::$container));
         $this->assertInstanceOf('\Symfony\Component\DependencyInjection\ContainerInterface', static::$container);
     }
 }
