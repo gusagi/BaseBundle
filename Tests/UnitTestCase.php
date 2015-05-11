@@ -20,21 +20,25 @@ abstract class UnitTestCase extends TestCase
     /**
      * @var KernelInterface
      */
-    protected $kernel;
+    protected static $kernel;
 
     /**
      * @var \Symfony\Component\DependencyInjection\ContainerAwareInterface
      */
-    protected $container;
+    protected static $container;
 
     /**
      * @return null
      */
     public function setUp()
     {
-        $this->kernel = static::createKernel();
-        $this->kernel->boot();
-        $this->container = $this->kernel->getContainer();
+        if (null !== static::$kernel) {
+            static::$kernel->shutdown();
+        }
+
+        static::$kernel = static::createKernel();
+        static::$kernel->boot();
+        static::$container = static::$kernel->getContainer();
 
         parent::setUp();
     }
@@ -44,7 +48,9 @@ abstract class UnitTestCase extends TestCase
      */
     public function tearDown()
     {
-        $this->kernel->shutdown();
+        if (null !== static::$kernel) {
+            static::$kernel->shutdown();
+        }
 
         parent::tearDown();
     }
