@@ -1,10 +1,10 @@
 <?php
 
-namespace Wizin\Bundle\BaseBundle\Tests;
+namespace Wizin\Bundle\BaseBundle\Tests\TestCases;
 
-use Wizin\Bundle\BaseBundle\TestCases\UnitTestCase;
+use Wizin\Bundle\BaseBundle\TestCases\FunctionalTestCase;
 
-class UnitTestCaseTest extends UnitTestCase
+class FunctionalTestCaseTest extends FunctionalTestCase
 {
     /**
      * @test
@@ -12,6 +12,14 @@ class UnitTestCaseTest extends UnitTestCase
     public function isKernelBooted()
     {
         $this->assertInstanceOf('\Symfony\Component\HttpKernel\KernelInterface', static::$kernel);
+    }
+
+    /**
+     * @test
+     */
+    public function isClientLoaded()
+    {
+        $this->assertInstanceOf('\Symfony\Bundle\FrameworkBundle\Client', static::$client);
     }
 
     /**
