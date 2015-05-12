@@ -1,6 +1,6 @@
 <?php
 
-namespace Wizin\Bundle\BaseBundle\TestCases;
+namespace Wizin\Bundle\BaseBundle\TestCase;
 
 use Symfony\Bundle\FrameworkBundle\Tests\TestCase;
 use Symfony\Component\Finder\Finder;
