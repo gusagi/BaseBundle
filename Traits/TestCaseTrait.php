@@ -26,4 +26,12 @@ trait TestCaseTrait
         static::$container = static::$kernel->getContainer();
     }
 
+    /**
+     * @return \Doctrine\ORM\EntityManager
+     */
+    protected function getEntityManager()
+    {
+        return static::$container->get('doctrine')->getManager();
+    }
+
 }
