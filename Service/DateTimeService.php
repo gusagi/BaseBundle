@@ -5,12 +5,12 @@
 namespace Wizin\Bundle\BaseBundle\Service;
 
 /**
- * Class DateTime
+ * Class DateTimeService
  *
  * @package Wizin\Bundle\BaseBundle\Service
  * @author Makoto Hashiguchi <gusagi@gmail.com>
  */
-class DateTime
+class DateTimeService
 {
     /**
      * @var float request timestamp
