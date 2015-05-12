@@ -10,6 +10,14 @@ use Wizin\Bundle\BaseBundle\Traits\TestCaseTrait;
  *
  * @author Makoto Hashiguchi <gusagi@gmail.com>
  */
+
+/**
+ * Class FunctionalTestCase
+ * The base class for functional tests.
+ *
+ * @package Wizin\Bundle\BaseBundle\TestCase
+ * @author Makoto Hashiguchi <gusagi@gmail.com>
+ */
 abstract class FunctionalTestCase extends WebTestCase
 {
     /**
