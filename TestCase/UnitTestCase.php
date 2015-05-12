@@ -12,6 +12,7 @@ use Wizin\Bundle\BaseBundle\Traits\TestCaseTrait;
  *
  * refer to https://gist.github.com/jakzal/1319290 and \Symfony\Bundle\FrameworkBundle\Test\WebTestCase
  *
+ * @package Wizin\Bundle\BaseBundle\TestCase
  * @author Makoto Hashiguchi <gusagi@gmail.com>
  */
 abstract class UnitTestCase extends TestCase
