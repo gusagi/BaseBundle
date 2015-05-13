@@ -1,3 +1,3 @@
-services:
-    wizin.base.date_time:
-        class: %wizin.base.service.date_time.class%
+#services:
+#    wizin.base.service_name:
+#        class: %wizin.base.service.service_name.class%
