@@ -28,14 +28,33 @@ abstract class FunctionalTestCase extends WebTestCase
     /**
      * @var \Symfony\Bundle\FrameworkBundle\Client
      */
-    protected static $client;
+    private $client;
 
     /**
      * @return null
      */
     public function setUp()
     {
-        static::$client = $this->createClient();
-        $this->setUpContainer();
+        parent::setUp();
+
+        $this->client = $this->createClient();
+    }
+
+    /**
+     * @return null
+     */
+    public function tearDown()
+    {
+        unset($this->client);
+
+        parent::tearDown();
+    }
+
+    /**
+     * @return \Symfony\Bundle\FrameworkBundle\Client
+     */
+    protected function getClient()
+    {
+        return $this->client;
     }
 }

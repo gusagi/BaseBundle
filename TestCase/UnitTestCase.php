@@ -45,7 +45,6 @@ abstract class UnitTestCase extends TestCase
         static::$kernel->boot();
 
         parent::setUp();
-        $this->setUpContainer();
     }
 
     /**

@@ -19,6 +19,6 @@ class UnitTestCaseTest extends UnitTestCase
      */
     public function isContainerLoaded()
     {
-        $this->assertInstanceOf('\Symfony\Component\DependencyInjection\ContainerInterface', static::$container);
+        $this->assertInstanceOf('\Symfony\Component\DependencyInjection\ContainerInterface', $this->getContainer());
     }
 }

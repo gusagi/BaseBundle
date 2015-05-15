@@ -19,7 +19,7 @@ class FunctionalTestCaseTest extends FunctionalTestCase
      */
     public function isClientLoaded()
     {
-        $this->assertInstanceOf('\Symfony\Bundle\FrameworkBundle\Client', static::$client);
+        $this->assertInstanceOf('\Symfony\Bundle\FrameworkBundle\Client', $this->getClient());
     }
 
     /**
@@ -27,6 +27,6 @@ class FunctionalTestCaseTest extends FunctionalTestCase
      */
     public function isContainerLoaded()
     {
-        $this->assertInstanceOf('\Symfony\Component\DependencyInjection\ContainerInterface', static::$container);
+        $this->assertInstanceOf('\Symfony\Component\DependencyInjection\ContainerInterface', $this->getContainer());
     }
 }

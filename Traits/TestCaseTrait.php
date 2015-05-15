@@ -12,18 +12,11 @@ namespace Wizin\Bundle\BaseBundle\Traits;
 trait TestCaseTrait
 {
     /**
-     * @var \Symfony\Component\DependencyInjection\ContainerInterface
+     * @return \Symfony\Component\DependencyInjection\ContainerInterface
      */
-    protected static $container;
-
-    /**
-     * set ContainerInterface instance to property
-     *
-     * @return void
-     */
-    protected function setUpContainer()
+    protected function getContainer()
     {
-        static::$container = static::$kernel->getContainer();
+        return static::$kernel->getContainer();
     }
 
     /**
@@ -31,7 +24,7 @@ trait TestCaseTrait
      */
     protected function getEntityManager()
     {
-        return static::$container->get('doctrine')->getManager();
+        return $this->getContainer()->get('doctrine')->getManager();
     }
 
 }
