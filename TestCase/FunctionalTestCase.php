@@ -28,7 +28,7 @@ abstract class FunctionalTestCase extends WebTestCase
     /**
      * @var \Symfony\Bundle\FrameworkBundle\Client
      */
-    private $client;
+    protected $client;
 
     /**
      * @return null
