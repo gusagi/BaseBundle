@@ -16,6 +16,10 @@
     "symfony/framework-bundle": "~2.3",
     "stof/doctrine-extensions-bundle": "dev-master"
   },
+  "require-dev": {
+    "phpunit/phpunit": "4.6.*",
+    "hautelook/alice-bundle": "0.2"
+  },
   "autoload": {
     "psr-0": { "Wizin\\Bundle\\BaseBundle": "" }
   },
