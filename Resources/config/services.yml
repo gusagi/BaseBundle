@@ -1,0 +1,3 @@
+#services:
+#    wizin_base.example:
+#        class: %wizin_base.example.class%

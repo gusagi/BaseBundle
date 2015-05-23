@@ -1,0 +1,3 @@
+#parameters:
+#    wizin_base.example.class: Wizin\Bundle\BaseBundle\Service\ExampleService
+
