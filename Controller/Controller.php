@@ -1,6 +1,6 @@
 <?php
 /**
- * Base controller class for Wizin packages
+ * Base controller class for Wizin package
  */
 namespace Wizin\Bundle\BaseBundle\Controller;
 
