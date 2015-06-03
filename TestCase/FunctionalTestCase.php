@@ -3,7 +3,7 @@
 namespace Wizin\Bundle\BaseBundle\TestCase;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
-use Wizin\Bundle\BaseBundle\Traits\TestCaseTrait;
+use Wizin\Bundle\BaseBundle\Traits\TestCase\TestCase as TestCaseTrait;
 
 /**
  * The base class for functional tests.
@@ -21,7 +21,7 @@ use Wizin\Bundle\BaseBundle\Traits\TestCaseTrait;
 abstract class FunctionalTestCase extends WebTestCase
 {
     /**
-     * \Wizin\Bundle\BaseBundle\Traits\TestCaseTrait
+     * \Wizin\Bundle\BaseBundle\Traits\TestCase\TestCase
      */
     use TestCaseTrait;
 

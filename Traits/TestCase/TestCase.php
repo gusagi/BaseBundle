@@ -2,7 +2,7 @@
 /**
  * Trait for TestCase
  */
-namespace Wizin\Bundle\BaseBundle\Traits;
+namespace Wizin\Bundle\BaseBundle\Traits\TestCase;
 
 use Symfony\Bridge\Doctrine\DataFixtures\ContainerAwareLoader;
 use Doctrine\Common\DataFixtures\FixtureInterface;
@@ -14,7 +14,7 @@ use Doctrine\Common\DataFixtures\Executor\ORMExecutor;
  *
  * @author Makoto Hashiguchi <gusagi@gmail.com>
  */
-trait TestCaseTrait
+trait TestCase
 {
     /**
      * @return \Symfony\Component\DependencyInjection\ContainerInterface
