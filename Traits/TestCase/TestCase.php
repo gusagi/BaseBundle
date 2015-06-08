@@ -65,7 +65,7 @@ trait TestCase
      * @throws \Doctrine\DBAL\DBALException
      * @throws \Exception
      */
-    protected function truncate($executor)
+    protected function truncate($executor = null)
     {
         // suspend FOREIGN KEY constraint
         $entityManager = $this->getEntityManager();
