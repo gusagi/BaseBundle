@@ -32,7 +32,7 @@ trait Timestampable
      * @param \DateTime $createdAt
      * @return Content
      */
-    public function setCreatedAt($createdAt)
+    public function setCreatedAt(\DateTime $createdAt)
     {
         $this->createdAt = $createdAt;
 
@@ -55,7 +55,7 @@ trait Timestampable
      * @param \DateTime $updatedAt
      * @return Content
      */
-    public function setUpdatedAt($updatedAt)
+    public function setUpdatedAt(\DateTime $updatedAt)
     {
         $this->updatedAt = $updatedAt;
 
