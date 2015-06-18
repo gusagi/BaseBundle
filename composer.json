@@ -22,6 +22,11 @@
   "autoload": {
     "psr-0": { "Wizin\\Bundle\\BaseBundle": "" }
   },
+  "extra": {
+    "branch-alias": {
+      "dev-feature/0.1": "0.1.x-dev"
+    }
+  },
   "target-dir": "Wizin/Bundle/BaseBundle",
   "minimum-stability": "dev"
 }
