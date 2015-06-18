@@ -5,7 +5,7 @@ namespace Wizin\Bundle\BaseBundle\TestCase;
 use Symfony\Bundle\FrameworkBundle\Tests\TestCase;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\HttpKernel\KernelInterface;
-use Wizin\Bundle\BaseBundle\Traits\TestCaseTrait;
+use Wizin\Bundle\BaseBundle\Traits\TestCase\TestCase as TestCaseTrait;
 
 /**
  * The base class for unit tests.
@@ -18,7 +18,7 @@ use Wizin\Bundle\BaseBundle\Traits\TestCaseTrait;
 abstract class UnitTestCase extends TestCase
 {
     /**
-     * \Wizin\Bundle\BaseBundle\Traits\TestCaseTrait
+     * \Wizin\Bundle\BaseBundle\Traits\TestCase\TestCase
      */
     use TestCaseTrait;
 

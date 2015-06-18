@@ -1,15 +1,12 @@
 <?php
 /**
- * Trait for Controller
+ * Base service class for Wizin package
  */
-namespace Wizin\Bundle\BaseBundle\Traits;
+namespace Wizin\Bundle\BaseBundle\Service;
 
-/**
- * Trait for Controller
- *
- * @author Makoto Hashiguchi <gusagi@gmail.com>
- */
-trait ControllerTrait
+use Symfony\Component\DependencyInjection\ContainerAware;
+
+class Service extends ContainerAware
 {
     /**
      * @return \Doctrine\ORM\EntityManager
@@ -18,6 +15,5 @@ trait ControllerTrait
     {
         return $this->container->get('doctrine')->getManager();
     }
-
 }
 
