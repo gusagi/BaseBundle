@@ -30,7 +30,7 @@ trait Timestampable
      * Set createdAt
      *
      * @param \DateTime $createdAt
-     * @return Content
+     * @return static
      */
     public function setCreatedAt(\DateTime $createdAt)
     {
@@ -53,7 +53,7 @@ trait Timestampable
      * Set updatedAt
      *
      * @param \DateTime $updatedAt
-     * @return Content
+     * @return static
      */
     public function setUpdatedAt(\DateTime $updatedAt)
     {
