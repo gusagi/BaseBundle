@@ -22,6 +22,5 @@
   "autoload": {
     "psr-0": { "Wizin\\Bundle\\BaseBundle": "" }
   },
-  "target-dir": "Wizin/Bundle/BaseBundle",
-  "minimum-stability": "dev"
+  "target-dir": "Wizin/Bundle/BaseBundle"
 }
