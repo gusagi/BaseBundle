@@ -4,10 +4,15 @@
  */
 namespace Wizin\Bundle\BaseBundle\Service;
 
-use Symfony\Component\DependencyInjection\ContainerAware;
+use Symfony\Component\DependencyInjection\ContainerAwareTrait;
 
-class Service extends ContainerAware
+class Service
 {
+    /**
+     * \Symfony\Component\DependencyInjection\ContainerAwareTrait
+     */
+    use ContainerAwareTrait;
+
     /**
      * @return \Doctrine\ORM\EntityManager
      */
